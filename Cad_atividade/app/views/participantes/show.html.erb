@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @participante.nome %>
+</p>
+
+<p>
+  <strong>Tipo(Ex.:Aluno, Convidao:</strong>
+  <%= @participante.tipo %>
+</p>
+
+<p>
+  <strong>Matricula:</strong>
+  <%= @participante.matricula %>
+</p>
+
+<p>
+  <strong>E-mail:</strong>
+  <%= @participante.email %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @participante.telefone %>
+</p>
+
+<%= link_to 'Editar', edit_participante_path(@participante) %> |
+<%= link_to 'Voltar', participantes_path %>

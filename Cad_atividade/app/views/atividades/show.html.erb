@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @atividade.descricao %>
+</p>
+
+<p>
+  <strong>Palestrante:</strong>
+  <%= @atividade.palestrante %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @atividade.local %>
+</p>
+<p>
+  <strong>Data inicio:</strong>
+  <%= @atividade.data_inicio %>
+</p>
+<p>
+  <strong>Data Fim:</strong>
+  <%= @atividade.data_fim %>
+</p>
+
+<%= link_to 'Editar', edit_atividade_path(@atividade) %> |
+<%= link_to 'Voltar', atividades_path %>
