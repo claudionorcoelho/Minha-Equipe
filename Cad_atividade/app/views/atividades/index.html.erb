@@ -20,7 +20,7 @@
         <td><%= atividade.local %></td>
         <td><%= atividade.data_inicio %></td>
         <td><%= atividade.data_fim %></td>
-         link_to 'Exibir', atividade %></td>
+        <td><%link_to 'Exibir', atividade %></td>
         <td><%= link_to 'Editar', edit_atividade_path(atividade) %></td>
         <td><%= link_to 'Apagar', atividade, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
@@ -31,3 +31,8 @@
 <br>
 
 <%= link_to 'Nova Atividade', new_atividade_path %>
+
+<br>
+<br>
+<br>
+<%= link_to 'Cadstrar Participante ', participantes_path %>
